@@ -1,566 +1,549 @@
----
-layout: home
----
-  <div class="text-gray-800 antialiased">
-    
-    <main>
-      <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
-      >
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
-                </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Cookie. You can see README file for installation and customization.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</head>
+<body>
+  <div class="">
+     
+     <section class="text-white body-font bg-gray-800">
+      <header class="text-gray-700 body-font">
+        <div class="container flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row ">
+         <a class="flex items-center w-40 mb-4 font-medium text-gray-900 title-font md:mb-0">
+          <svg width="330" height="80" viewBox="0 0 630 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M118.419 126.74H126.621L134.182 100.716H134.493L142.073 126.74H150.275L161.664 86.9359H152.471L145.882 114.651H145.532L138.283 86.9359H130.411L123.142 114.593H122.812L116.223 86.9359H107.03L118.419 126.74ZM169.658 86.9359H161.242V126.74H169.658V86.9359ZM206.776 100.871C205.669 91.6782 198.711 86.3917 189.498 86.3917C178.983 86.3917 170.956 93.8162 170.956 106.838C170.956 119.821 178.847 127.284 189.498 127.284C199.702 127.284 205.863 120.501 206.776 113.174L198.264 113.135C197.467 117.392 194.124 119.841 189.634 119.841C183.59 119.841 179.489 115.351 179.489 106.838C179.489 98.5585 183.531 93.8356 189.692 93.8356C194.299 93.8356 197.622 96.4983 198.264 100.871H206.776ZM207.885 126.74H216.301V115.429L220.441 110.375L231.344 126.74H241.412L226.466 104.758L241.237 86.9359H231.15L216.826 104.486H216.301V86.9359H207.885V126.74ZM240.694 126.74H267.593V119.802H249.11V110.298H266.135V103.359H249.11V93.8745H267.515V86.9359H240.694V126.74ZM283.391 126.74C295.518 126.74 302.865 119.238 302.865 106.799C302.865 94.3992 295.518 86.9359 283.507 86.9359H269.28V126.74H283.391ZM277.696 119.53V94.1466H283.06C290.523 94.1466 294.469 97.956 294.469 106.799C294.469 115.681 290.523 119.53 283.041 119.53H277.696ZM304.173 126.74H321.18C330.12 126.74 334.882 122.076 334.882 115.74C334.882 109.851 330.664 106.294 326.136 106.08V105.691C330.275 104.758 333.327 101.824 333.327 97.1397C333.327 91.1729 328.895 86.9359 320.111 86.9359H304.173V126.74ZM312.589 119.86V109.287H319.644C323.687 109.287 326.194 111.619 326.194 114.904C326.194 117.897 324.153 119.86 319.45 119.86H312.589ZM312.589 103.592V93.7384H318.983C322.715 93.7384 324.833 95.6626 324.833 98.539C324.833 101.688 322.268 103.592 318.828 103.592H312.589ZM335.432 126.74H360.912V119.802H343.848V86.9359H335.432V126.74ZM396.587 106.838C396.587 93.8162 388.502 86.3917 377.949 86.3917C367.337 86.3917 359.31 93.8162 359.31 106.838C359.31 119.802 367.337 127.284 377.949 127.284C388.502 127.284 396.587 119.86 396.587 106.838ZM388.055 106.838C388.055 115.273 384.051 119.841 377.949 119.841C371.826 119.841 367.842 115.273 367.842 106.838C367.842 98.403 371.826 93.8356 377.949 93.8356C384.051 93.8356 388.055 98.403 388.055 106.838ZM433.016 100.871C431.908 91.6782 424.95 86.3917 415.738 86.3917C405.223 86.3917 397.196 93.8162 397.196 106.838C397.196 119.821 405.087 127.284 415.738 127.284C425.941 127.284 432.102 120.501 433.016 113.174L424.503 113.135C423.706 117.392 420.363 119.841 415.874 119.841C409.829 119.841 405.728 115.351 405.728 106.838C405.728 98.5585 409.771 93.8356 415.932 93.8356C420.538 93.8356 423.862 96.4983 424.503 100.871H433.016ZM434.125 126.74H442.541V115.429L446.68 110.375L457.584 126.74H467.652L452.706 104.758L467.477 86.9359H457.39L443.065 104.486H442.541V86.9359H434.125V126.74ZM488.206 98.3836H496.272C496.155 91.2895 490.324 86.3917 481.462 86.3917C472.735 86.3917 466.341 91.2118 466.38 98.4419C466.36 104.311 470.5 107.674 477.225 109.287L481.559 110.375C485.893 111.425 488.303 112.669 488.323 115.351C488.303 118.266 485.543 120.249 481.267 120.249C476.894 120.249 473.746 118.227 473.474 114.243H465.33C465.544 122.853 471.705 127.304 481.365 127.304C491.082 127.304 496.797 122.659 496.816 115.37C496.797 108.743 491.802 105.225 484.882 103.67L481.306 102.815C477.847 102.018 474.951 100.735 475.009 97.8782C475.009 95.3127 477.283 93.4275 481.403 93.4275C485.427 93.4275 487.895 95.2544 488.206 98.3836Z" fill="black" />
+           <path d="M511.336 98.2805C516.464 98.2805 520.61 94.1346 520.592 89.0245C520.575 83.9145 516.464 79.7686 511.336 79.7686C506.244 79.7686 502.098 83.9145 502.08 89.0245C502.063 94.1346 506.244 98.2805 511.336 98.2805ZM511.336 95.3617C507.839 95.3617 504.982 92.513 504.999 89.0333C505.008 85.536 507.857 82.6873 511.336 82.6873C514.842 82.6873 517.665 85.5185 517.673 89.0333C517.691 92.5306 514.851 95.3617 511.336 95.3617ZM506.463 89.0245C506.463 91.7505 508.672 93.968 511.406 93.968C513.799 93.968 515.736 92.2501 516.008 89.9799H513.405C513.221 90.8564 512.414 91.47 511.406 91.47C510.057 91.47 508.952 90.3656 508.952 89.0158C508.952 87.6572 510.057 86.5791 511.406 86.5791C512.414 86.5791 513.3 87.1926 513.475 88.0691H516.078C515.806 85.799 513.799 84.081 511.406 84.081C508.672 84.081 506.463 86.2986 506.463 89.0245Z" fill="black" />
+           <rect x="4.06229" y="4.06229" width="621.568" height="203.821" rx="101.91" stroke="url(#paint0_linear)" stroke-width="8.12458" />
+           <defs>
+            <linearGradient id="paint0_linear" x1="-5.96013e-06" y1="45.4992" x2="212.636" y2="414.007" gradientUnits="userSpaceOnUse">
+             <stop offset="0.0001" stop-color="#63F7EE" />
+             <stop offset="0.786458" stop-color="#FCE952" />
+            </linearGradient>
+           </defs>
           </svg>
+       
+         </a>
+          <button onclick="location.href='#price'" class="items-center px-8 py-3 mt-4 ml-auto font-semibold text-blue-700 transition duration-500 ease-in-out transform bg-white border rounded-lg lg:inline-flex lg:mt-px hover:border-blue-800 hover:bg-blue-700 hover:text-white focus:ring focus:outline-none">
+            お申込みはこちら
+          </button>
         </div>
+       </header>
+       
+      <div class="container px-8 pt-20 pb-24 mx-auto lg:px-4">
+       <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+        <h2 class="mb-1 text-xs font-semibold tracking-widest text-white title-font">Power Platform オンライン学習プログラム</h2>
+        <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-5xl title-font">
+         Power Platform
+         <br class="md:hidden">
+         を最短1カ月でマスター
+        </h1>
+        <p class="mx-auto text-base font-medium leading-relaxed text-white lg:w-2/3">
+          基礎から応用まで幅広く学べるオンライン学習プログラム<br/>
+          学習して終わりじゃない　その後につなげる
+      　</p>
+       </div>
+       <div class="flex lg:justify-center">
+        <button onclick="location.href='https://forms.office.com/r/gWxuvSbKwY'" class="inline-flex px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 focus:shadow-outline focus:outline-none">
+          簡単！無料相談はこちらから
+      </button>
+       </div>
       </div>
-      <section class="pb-20 bg-gray-300 -mt-24">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
-            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <i class="fas fa-award"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Divide details about your product or agency work into parts.
-                    A paragraph describing a feature will be enough.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-retweet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Free Revisions</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-              >
-                <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <i class="fas fa-fingerprint"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Verified Company</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough. Keep you user engaged!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap items-center mt-32">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
-              >
-                <i class="fas fa-user-friends text-xl"></i>
-              </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
-              </h3>
-              <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-              >
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-8 text-gray-700"
-              >
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
-              </p>
-              <a
-                href="https://github.com/abhinavs/cookie"
-                class="font-bold text-gray-500 px-8 py-4 rounded-md bg-gray-50 hover:bg-gray-400 hover:text-gray-50"
-                >Check Cookie!</a>
-            </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
-              >
-                <img
-                  alt="..."
-                  src="./assets/img/section1.jpeg"
-                  class="w-full align-middle rounded-t-lg"
-                />
-                <blockquote class="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block"
-                    style="height: 95px; top: -94px;"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Top Notch Services
-                  </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="relative py-20">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-white fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
+     </section>
+     <!-- <section class="block " id="section">
+      <div class="container flex flex-col items-center justify-center px-10 py-2 mx-auto lg:px-48">
+       <img class="object-cover object-center mx-auto mb-10 rounded-lg lg:w-full md:w-15/5 w-20/6" alt="hero" src="https://dummyimage.com/720x600/F3F4F7/64748b">
+      </div>
+     </section> -->
+     
+     <section class="text-gray-700 body-font" id="about">
+      <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
+       <div class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+        <h2 class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">学習講座</h2>
+        <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-blue-800 lg:text-left lg:text-5xl title-font">
+         Power Platform 集中プログラム
+        </h1>
+        <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+         ・学びたいけど独学では難しい<br/>
+         ・スキルアップを目指したい<br/>
+         ・効率よく学習を進めたい<br/>
+         方に向けた学習プログラム 
+        </p>
+        <div class="flex justify-center">
+         <a href="#price" class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+          お申込みはこちら
+          <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+           <path fill="none" d="M0 0h24v24H0z" />
+           <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
           </svg>
+         </a>
         </div>
-        <div class="container mx-auto px-4">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-              <img
-                alt="..."
-                class="max-w-full rounded-lg shadow-lg"
-                src="./assets/img/section2.jpeg"
-              />
-            </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pr-12">
-                <div
-                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
-                >
-                  <i class="fas fa-rocket text-xl"></i>
-                </div>
-                <h3 class="text-3xl font-semibold">A growing company</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
-                </p>
-                <ul class="list-none mt-6">
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fas fa-fingerprint"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
-                          Carefully crafted components
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fab fa-html5"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Amazing page examples</h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="far fa-paper-plane"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Dynamic components</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pt-20 pb-48">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center text-center mb-24">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-              <p class="text-lg leading-relaxed m-4 text-gray-600">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-1-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Web Developer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i></button
-                    ><button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-2-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Marketing Specialist
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-3-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    UI/UX Designer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-4-470x470.png"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Founder and CEO
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i></button
-                    ><button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pb-20 relative block bg-gray-900">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-900 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
+       </div>
+       <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+        <img class="object-cover object-center rounded-lg " alt="hero" src="./LP_About1.png">
+       </div>
+      </div>
+     </section>
+     
+     <section class="text-gray-700 body-font">
+      <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
+       <div class="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+       </div>
+       <div class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
+        <h2 class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">技術支援</h2>
+        <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-blue-800 lg:text-left lg:text-5xl title-font">
+         Power Platform 技術支援
+        </h1>
+        <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+          ・Power Platform を導入したいがどうすればいいかわからない<br/>
+          ・悩んだときに相談できる窓口がほしい<br/>
+          実際に大手様へコンサル、レクチャー、開発実績のある人間が担当
+        </p>
+        <div class="flex justify-center">
+         <a href="#price" class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+          お申込みはこちら
+          <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+           <path fill="none" d="M0 0h24v24H0z" />
+           <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
           </svg>
+         </a>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-          <div class="flex flex-wrap text-center justify-center">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Build something</h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Put the potentially record low maximum sea ice extent tihs year
-                down to low ice. According to the National Oceanic and
-                Atmospheric Administration, Ted, Scambos.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-medal text-xl"></i>
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                Excelent Services
-              </h6>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-poll text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Grow your market
-              </h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-lightbulb text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+       </div>
+      </div>
+     </section>
+     
+     <section class="text-gray-700 body-font">
+      <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:py-24 md:flex-row">
+       <div class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+        <h2 class="mb-1 text-xs font-medium tracking-widest text-blue-500 title-font">資格取得</h2>
+        <h1 class="mb-8 text-2xl font-bold tracking-tighter text-center text-blue-800 lg:text-left lg:text-5xl title-font">
+         PL-900 学習プログラム
+        </h1>
+        <p class="mb-8 text-base leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+         PL-900 に合格したい方に向けたオリジナル試験対策問題を使った学習プログラム
+        </p>
+        <div class="flex justify-center">
+         <a href="#price" class="inline-flex items-center font-semibold text-blue-700 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+          お申込みはこちら
+          <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+           <path fill="none" d="M0 0h24v24H0z" />
+           <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+          </svg>
+         </a>
         </div>
-      </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div class="w-full lg:w-6/12 px-4">
-              <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
-              >
-                <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete this form and we will get back to you in 24 hours.
-                  </p>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="full-name"
-                      >Full Name</label
-                    ><input
-                      type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Full Name"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="email"
-                      >Email</label
-                    ><input
-                      type="email"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Email"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="message"
-                      >Message</label
-                    ><textarea
-                      rows="4"
-                      cols="80"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Type a message..."
-                    ></textarea>
-                  </div>
-                  <div class="text-center mt-6">
-                    <button
-                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+       </div>
+       <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+        <img class="object-cover object-center rounded-lg " alt="hero" src="./LP_About3.png">
+       </div>
+      </div>
+     </section>
+     <section class="text-gray-700 body-font">
+      <div class="container px-10 pt-20 pb-24 mx-auto lg:px-6">
+       <div class="flex flex-col w-full text-left lg:text-center">
+        <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-blue-800 sm:text-6xl title-font">
+         そのお悩み
+         <br class="">
+         サービス名で解決できます
+        </h1>
+        <p class="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-1/2">
+          基礎学習から実務レベルで使えるアプリケーション構築の技術まで対応しています<br/>
+          常に最新のプログラムで学習が可能です<br/>
+        </p>
+         </div>
         </div>
-      </section>
-    </main>
-    
+       </div>
+     </section>
+
+     <section class="text-gray-700 body-font" id="services">
+      <div class="container px-10 pt-20 pb-24 mx-auto lg:px-6">
+       <div class="flex flex-col w-full text-left lg:text-center">
+        <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-blue-800 sm:text-3xl title-font">
+          サービスの流れ
+         </h1>
+        <div class="flex flex-wrap text-left pt-10">
+     
+         <div class="px-8 py-6 lg:w-1/3 md:w-full">
+          <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-800 bg-gray-200 rounded-full">
+            <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" viewBox="0 0 512 512" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#4B4B4B;}
+              </style>
+              <g>
+                <path class="st0" d="M430.135,14.339h0.017c0-0.008,0-0.008,0-0.008L430.135,14.339z" style="fill: rgb(75, 75, 75);"></path>
+                <path class="st0" d="M508.672,96.445c-2.126-2.118-5.059-3.327-8.06-3.327c-17.409,0-34.202,2.092-50.238,4.983
+                  c0.034-23.387,0.085-68.453,0.085-70.589c0-2.015-0.411-4.254-1.406-6.269c-0.721-1.509-1.715-2.881-2.83-3.979
+                  c-1.698-1.638-3.585-2.649-5.3-3.259c-1.767-0.592-3.396-0.832-4.992-0.832c-1.852,0.018-3.67,0.274-5.78,1.166
+                  c-19.45,8.302-39.312,20.205-58.436,34.407c-28.678,21.303-55.64,47.785-76.258,75.451c-10.308,13.841-19.038,28.001-25.539,42.074
+                  c-4.854,10.54-8.49,21.046-10.497,31.405h-6.895c-2.916-14.982-9.125-30.256-17.649-45.496
+                  c-15.831-28.146-39.638-56.223-66.635-80.554c-27.049-24.304-57.236-44.818-86.394-57.296c-2.092-0.884-3.91-1.14-5.762-1.158
+                  c-1.424,0-2.865,0.18-4.408,0.643c-1.149,0.352-2.35,0.858-3.55,1.612c-1.784,1.115-3.585,2.856-4.802,5.078
+                  c-1.236,2.195-1.784,4.742-1.767,7.006c0,2.136,0.051,47.202,0.085,70.589c-16.054-2.89-32.846-4.983-50.254-4.983
+                  c-2.985,0-5.935,1.209-8.044,3.327C1.218,98.572,0,101.496,0,104.489V384.63c0,5.669,4.168,10.472,9.794,11.269
+                  c14.836,2.11,32.314,6.046,50.718,11.638c27.632,8.371,57.356,20.454,83.752,35.333c13.19,7.427,25.54,15.556,36.379,24.21
+                  c10.858,8.654,20.171,17.838,27.375,27.272c2.144,2.813,5.523,4.476,9.056,4.476h77.87c3.533,0,6.912-1.663,9.056-4.476
+                  c9.588-12.59,22.966-24.699,38.678-35.737c23.567-16.594,52.262-30.77,80.682-41.507c28.42-10.738,56.601-18.053,78.864-21.209
+                  c5.608-0.797,9.776-5.6,9.776-11.269V104.489C512,101.496,510.783,98.572,508.672,96.445z M209.099,461.737
+                  c-8.079-7.718-17.032-14.974-26.671-21.74c-25.659-18.052-55.864-32.888-85.742-44.183c-25.968-9.811-51.627-16.903-73.907-20.874
+                  V116.238c16.208,0.892,32.245,3.542,47.956,6.81c0.788,0.171,1.595,0.24,2.419,0.232l-0.103,0.488
+                  c32.846,6.836,62.656,19.091,86.6,35.05c22.246,14.81,39.329,32.777,49.449,52.382V461.737z M168.483,145.559
+                  c-23.824-15.883-52.571-28.086-84.062-35.573c0-2.136,0-5.96-0.018-10.882c-0.017-15.789-0.051-42.528-0.068-58.497
+                  c13.928,6.981,28.352,15.978,42.382,26.414c26.912,19.973,52.519,45.152,71.575,70.777c9.536,12.795,17.443,25.71,23.12,38.008
+                  c4.682,10.146,7.804,19.854,9.244,28.695h-7.066C211.962,181.681,192.702,161.699,168.483,145.559z M286.968,476.067h-61.935
+                  v-255.63h17.666c0.018,0,0.018,0,0.018,0h26.568c0.016,0,0.016,0,0.034,0h17.649V476.067z M288.426,204.501h-7.101
+                  c2.023-12.4,7.427-26.551,15.66-41.173c14.184-25.273,36.551-51.876,62.021-74.773c21.766-19.613,45.847-36.516,68.676-47.965
+                  c-0.018,8.198-0.034,19.218-0.052,30.17c-0.016,16.989-0.034,33.729-0.051,39.226c-31.474,7.487-60.221,19.69-84.062,35.573
+                  C319.299,161.699,300.055,181.681,288.426,204.501z M489.24,374.948c-13.739,2.444-28.747,6.072-44.355,10.806
+                  c-29.09,8.816-60.169,21.414-88.316,37.271c-14.064,7.941-27.409,16.689-39.415,26.259c-5.008,3.996-9.759,8.139-14.235,12.427
+                  V211.199c10.119-19.604,27.202-37.571,49.448-52.382c23.927-15.96,53.737-28.215,86.6-35.05l-0.103-0.488
+                  c0.806,0.009,1.63-0.06,2.418-0.232c15.712-3.268,31.748-5.917,47.957-6.81V374.948z" style="fill: rgb(75, 75, 75);"></path>
+              </g>
+              </svg>
+          </div>
+          <h2 class="mb-3 text-lg font-medium text-gray-700 title-font">学習プランの設計</h2>
+          <p class="mb-4 text-base leading-relaxed">
+            経験豊富なスタッフがプログラム講師として学習をサポートします。お客様に合わせた学習プランを一緒に設計いたします。
+          </p>
+     
+         </div>
+         <div class="px-8 py-6 lg:w-1/3 md:w-full">
+          <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-800 bg-gray-200 rounded-full">
+            <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" viewBox="0 0 512 512" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#4B4B4B;}
+              </style>
+              <g>
+                <path class="st0" d="M382.249,186.492c44.544,0,80.654-36.106,80.654-80.654s-36.11-80.654-80.654-80.654
+                c-44.548,0-80.658,36.106-80.658,80.654S337.7,186.492,382.249,186.492z" style="fill: rgb(75, 75, 75);"></path>
+              <rect y="446.003" class="st0" width="512" height="53.3" style="fill: rgb(75, 75, 75);"></rect>
+              <path class="st0" d="M357.7,431.976h111.517V294.509c0-48.026-38.938-86.973-86.968-86.973c-48.034,0-86.972,38.947-86.972,86.973
+                v81.353H357.7V431.976z" style="fill: rgb(75, 75, 75);"></path>
+              <polygon class="st0" points="127.419,431.976 261.847,431.976 343.67,431.976 343.67,389.888 242.498,389.888 199.892,274.164 
+                1.173,274.164 63.123,431.976 	" style="fill: rgb(75, 75, 75);"></polygon>
+              <path class="st0" d="M60.637,104.537l50.938,39.3c0.216,0.168,0.473,0.257,0.708,0.408c0.115,0.053,0.213,0.123,0.319,0.177
+                c4.402,2.451,10.239,1.159,14.124-3.124c0.11-0.133,0.23-0.204,0.345-0.336l62.424-73.84c3.553-3.991,3.611-9.725,0.155-12.805
+                c-3.469-3.088-9.15-2.336-12.698,1.646l-58.34,62.336L73.548,86.927c-4.212-3.106-10.531-1.673-14.093,3.212
+                C55.889,94.988,56.411,101.448,60.637,104.537z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M107.203,213.005c0,6.867,5.562,12.416,12.42,12.416s12.42-5.549,12.42-12.416
+                c0-6.868-5.562-12.425-12.42-12.425S107.203,206.137,107.203,213.005z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M119.623,37.537c6.858,0,12.42-5.558,12.42-12.424c0-6.867-5.562-12.416-12.42-12.416
+                s-12.42,5.549-12.42,12.416C107.203,31.98,112.765,37.537,119.623,37.537z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M177.264,176.704c-4.849,4.85-4.849,12.716,0,17.566c4.855,4.849,12.721,4.849,17.571,0
+                c4.845-4.841,4.849-12.716,0-17.566C189.98,171.854,182.118,171.854,177.264,176.704z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M61.978,61.422c4.854-4.849,4.854-12.716,0-17.574c-4.854-4.85-12.717-4.841-17.566,0
+                c-4.845,4.858-4.85,12.726,0,17.574C49.265,66.272,57.128,66.263,61.978,61.422z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M213.565,131.484c6.858,0,12.425-5.558,12.42-12.425c0.005-6.85-5.558-12.408-12.42-12.408
+                c-6.863,0-12.42,5.558-12.42,12.416C201.144,125.926,206.702,131.484,213.565,131.484z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M25.686,131.484c6.862,0,12.416-5.558,12.42-12.417c0-6.858-5.562-12.433-12.425-12.416
+                c-6.862,0-12.416,5.558-12.42,12.408C13.266,125.926,18.823,131.484,25.686,131.484z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M44.416,176.713c-4.85,4.849-4.846,12.716-0.005,17.557c4.858,4.849,12.721,4.858,17.579,0.009
+                c4.85-4.85,4.841-12.726,0-17.566C57.132,171.854,49.265,171.854,44.416,176.713z" style="fill: rgb(75, 75, 75);"></path>
+              </g>
+            </svg>
+          </div>
+          <h2 class="mb-3 text-lg font-medium text-gray-700 title-font">自主学習</h2>
+          <p class="mb-4 text-base leading-relaxed">
+            効率よく学べるトレーニング用テキストを使って自習を行います。基礎から始まり、実践的な内容につながるテキストです。
+            途中でわからないことはチャットサポートで気軽にスタッフへ質問することができます
+          </p>
+     
+         </div>
+         <div class="px-8 py-6 lg:w-1/3 md:w-full">
+          <div class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-800 bg-gray-200 rounded-full">
+     
+            <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" viewBox="0 0 512 512" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#4B4B4B;}
+              </style>
+              <g>
+                <path class="st0" d="M262.203,224.297H257.5h-99.469L78.672,333.438L260.719,512l7.5-7.359L442.75,333.438l-79.344-109.141H262.203
+                z M345.813,245.75l-14.656,65.109l-51.859-65.109H345.813z M259.984,251.953l56.422,70.797H204.766L259.984,251.953z
+                 M240.75,245.75l-50.563,64.844v0.016l-14.563-64.859H240.75z M159.188,259.156L159.188,259.156l14.297,63.594h-60.547
+                L159.188,259.156z M179.25,341.75l50.063,109.422L117.75,341.75H179.25z M260.719,474.172L200.125,341.75h121.172L260.719,474.172z
+                 M292.109,451.172l50.063-109.422h61.484L292.109,451.172z M347.938,322.75l14.313-63.594l0,0l46.234,63.594H347.938z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M501.219,181.906c-25.906,0-34.859-6.5-39.906-11.531c-5.016-5.047-11.531-14-11.531-39.906
+                c0-0.984-0.094-3.781-3.188-3.781c-3.078,0-3.188,2.797-3.188,3.781c0,25.906-6.516,34.859-11.547,39.906
+                c-5.047,5.031-14.016,11.531-39.891,11.531c-1,0-3.781,0.109-3.781,3.203c0,3.078,2.781,3.188,3.781,3.188
+                c25.875,0,34.844,6.516,39.891,11.547c5.031,5.031,11.547,14,11.547,39.906c0,1,0.109,3.766,3.188,3.766
+                c3.094,0,3.188-2.766,3.188-3.766c0-25.906,6.516-34.875,11.531-39.906c5.047-5.047,14-11.547,39.906-11.547
+                c1,0,3.781-0.094,3.781-3.203C505,182.031,502.219,181.906,501.219,181.906z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M115.891,84.656c35.609,0,47.922,8.969,54.844,15.875c6.922,6.922,15.859,19.25,15.859,54.859
+                c0,1.359,0.188,5.172,4.406,5.172c4.25,0,4.375-3.813,4.375-5.172c0-35.609,8.953-47.938,15.875-54.859
+                c6.906-6.922,19.219-15.875,54.844-15.875c1.359,0,5.188-0.125,5.188-4.375c0-4.219-3.828-4.406-5.188-4.406
+                c-35.625,0-47.938-8.938-54.844-15.844c-6.922-6.938-15.875-19.234-15.875-54.844C195.375,3.828,195.25,0,191,0
+                c-4.219,0-4.406,3.828-4.406,5.188c0,35.609-8.938,47.906-15.859,54.844c-6.922,6.906-19.234,15.844-54.844,15.844
+                c-1.359,0-5.188,0.172-5.188,4.406C110.703,84.5,114.531,84.656,115.891,84.656z" style="fill: rgb(75, 75, 75);"></path>
+              <path class="st0" d="M114.453,196c0-2.828-2.563-2.938-3.469-2.938c-23.828,0-32.078-5.984-36.703-10.609
+                c-4.625-4.641-10.625-12.875-10.625-36.703c0-0.906-0.094-3.469-2.938-3.469c-2.813,0-2.938,2.563-2.938,3.469
+                c0,23.828-5.984,32.063-10.609,36.703c-4.641,4.625-12.891,10.609-36.703,10.609C9.547,193.063,7,193.172,7,196
+                s2.547,2.938,3.469,2.938c23.813,0,32.063,6,36.703,10.625c4.625,4.625,10.609,12.875,10.609,36.719
+                c0,0.906,0.125,3.453,2.938,3.453c2.844,0,2.938-2.547,2.938-3.453c0-23.844,6-32.094,10.625-36.719
+                c4.625-4.641,12.875-10.625,36.703-10.625C111.891,198.938,114.453,198.844,114.453,196z" style="fill: rgb(75, 75, 75);"></path>
+              </g>
+            </svg>
+          </div>
+          <h2 class="mb-3 text-lg font-medium text-gray-700 title-font">技術支援</h2>
+          <p class="mb-4 text-base leading-relaxed">
+            テキストが終わったからと言って終わりではありません。期間満了まで、チャットや Webミーティングなどで技術支援いたしますのでご安心ください
+          </p>
+     
+         </div>
+        </div>
+       </div>
+     </section>
+     
+     <!-- <section class="text-gray-700 body-font">
+      <div class="container px-8 pt-20 pb-24 mx-auto lg:px-4">
+     
+       <section class="text-gray-700 body-font">
+        <div class="container px-8  mx-auto lg:px-4">
+         <div class="flex flex-col w-full  text-left lg:text-center">
+          <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-blue-800 sm:text-3xl title-font">
+           お客様の声
+          </h1>
+     
+         </div>
+       </section>
+     
+       <div class="flex flex-wrap -m-4">
+        <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+         <div class="h-full text-left">
+
+          <p class="text-base font-medium leading-relaxed text-gray-700">"Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant.".</p>
+         </div>
+        </div>
+        <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+         <div class="h-full text-left">
+          <a class="inline-flex items-center mt-6">
+           <img alt="testimonial" class="inline-block object-cover object-center w-16 h-16 mb-8 bg-gray-100 rounded-full" src="https://dummyimage.com/302x302/94a3b8/ffffff"> <span class="flex flex-col flex-grow pl-4">
+            <span class="font-medium text-gray-900 title-font">Anna Schönn</span>
+            <span class="text-sm text-gray-500 uppercase">Corporate Position</span>
+           </span>
+          </a>
+          <p class="text-base font-medium leading-relaxed text-gray-700">"Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant.".</p>
+         </div>
+        </div>
+        <div class="p-8 mx-auto mb-6 lg:w-1/3 lg:mb-0">
+         <div class="h-full text-left">
+          <a class="inline-flex items-center mt-6">
+           <img alt="testimonial" class="inline-block object-cover object-center w-16 h-16 mb-8 bg-gray-100 rounded-full" src="https://dummyimage.com/302x302/94a3b8/ffffff"> <span class="flex flex-col flex-grow pl-4">
+            <span class="font-medium text-gray-900 title-font">Jakko Svensson</span>
+            <span class="text-sm text-gray-500 uppercase">Corporate Position</span>
+           </span>
+          </a>
+          <p class="text-base font-medium leading-relaxed text-gray-700">"Skate ipsum dolor sit amet, slam birdie wheels ollie darkslide egg plant. Baseplate 540 helipop flypaper feeble griptape. Nollie deck street bluntslide half-cab yeah. Casper slide ollie north 540 Bill Danforth slide cess slide nose blunt. Pressure flip Streetstyle in Tempe mute-air judo air backside fastplant.".</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section> -->
+     
+     <section class="text-gray-700 body-font" id="price">
+      <div class="container px-8 pt-8 mx-auto lg:px-48">
+       <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+        <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-blue-800 sm:text-5xl title-font">
+         サービス利用料金
+        </h1>
+        <p class="mx-auto text-base font-medium leading-relaxed text-gray-700 lg:w-2/3">
+        </p>
+       </div>
+       <div class="flex flex-wrap ">
+        <div class="px-8 py-6 mx-auto lg:px-10 lg:w-1/2 md:w-full">
+         <div class="h-full px-4 py-6 border rounded-xl">
+          <h3 class="tracking-widest">ベーシックプラン</h3>
+          <h2 class="flex items-center justify-start mt-2 mb-4 text-3xl font-bold leading-none text-left text-blue-800 lg:text-4xl">
+           &yen;100,000
+           <span class="ml-1 text-base text-gray-600">(税込)</span>
+          </h2>
+          <p class="mb-4 text-base leading-relaxed">
+            Power Platfrom を短期に学びたい方におすすめのプランです
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>4週間の学習サポート
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>チャットベースの技術支援
+          </p>
+          <a href="https://forms.office.com/r/cmQyh83qnH">
+            <button class="items-end w-full px-8 py-2 mt-12 font-semibold text-black transition duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl hover:text-white focus:shadow-outline focus:outline-none hover:bg-black hoveer:border-black">
+              お申込み
+             </button>
+          </a>
+         </div>
+        </div>
+        <div class="px-8 py-6 mx-auto lg:px-10 lg:w-1/2 md:w-full">
+         <div class="h-full px-4 py-6 border rounded-xl">
+          <h3 class="tracking-widest">スタンダードプラン</h3>
+          <h2 class="flex items-center justify-start mt-2 mb-4 text-3xl font-bold leading-none text-left text-blue-800 lg:text-4xl">
+           &yen;200,000
+           <span class="ml-1 text-base text-gray-600">(税込)</span>
+          </h2>
+          <p class="mb-4 text-base leading-relaxed">
+            Power Platfrom をじっくり学びたい方におすすめのプランです
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-green-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>8週間の学習サポート
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>チャットベースの技術支援
+          </p>
+          <p class="flex items-center mb-6 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-green-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>8時間のオンライン技術支援
+          </p>
+          <a href="https://forms.office.com/r/6XrTgxZNTQ">
+            <button class="w-full px-8 py-2 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 focus:shadow-outline focus:outline-none">
+              お申込み
+            </button>
+          </a>
+         </div>
+        </div>
+        <div class="px-8 py-6 mx-auto lg:px-10 lg:w-1/2 md:w-full">
+         <div class="h-full px-4 py-6 border rounded-xl">
+          <h3 class="tracking-widest">PL-900対策プラン</h3>
+          <h2 class="flex items-center justify-start mt-2 mb-4 text-3xl font-bold leading-none text-left text-blue-800 lg:text-4xl">
+           &yen;120,000
+           <span class="ml-1 text-base text-gray-600">(税込)</span>
+          </h2>
+          <p class="mb-4 text-base leading-relaxed">
+            PL-900 の取得を目指す方におすすめのプランです
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>8週間の学習サポート
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>チャットベースの相談
+          </p>
+          <p class="flex items-center mb-2 text-gray-600">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-green-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>試験対策オリジナルテキスト
+          </p>
+          <a href="https://forms.office.com/r/Tq64p6sYms">
+            <button class="items-end w-full px-8 py-2 mt-12 font-semibold text-black transition duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl hover:text-white focus:shadow-outline focus:outline-none hover:bg-black hoveer:border-black">
+             お申込み
+            </button>
+          </a>
+         </div>
+        </div>
+        <div class="px-8 py-6 mx-auto lg:px-10 lg:w-1/2 md:w-full">
+         <div class="h-full px-4 py-6 border rounded-xl bg-blue-900 text-white">
+          <h3 class="tracking-widest">プレミアムプラン</h3>
+          <h2 class="flex items-center justify-start mt-2 mb-4 text-3xl font-bold leading-none text-left lg:text-4xl">
+           要相談
+          </h2>
+          <p class="mb-4 text-base leading-relaxed">
+            Power Platfrom の業務を技術支援としてサポートします
+          </p>
+          <p class="flex items-center mb-2">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 bg-white text-gray-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>チャットベースの技術支援
+          </p>
+          <p class="flex  mb-10 items-center">
+           <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-green-500 rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+             <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+           </span>8時間のオンライン技術支援
+          </p>
+          <a href="https://forms.office.com/r/3Lx333isqj"><button class="items-end w-full px-8 py-2 mt-12 font-semibold text-black transition duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl hover:text-white focus:shadow-outline focus:outline-none hover:bg-black hoveer:border-black">
+            ご相談
+           </button></a>
+          
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+     
+     <footer class="mt-10 text-gray-700 bg-white border-t body-font">
+      <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row md:flex-no-wrap ">
+       <a class="flex items-center justify-center w-48 font-medium text-gray-900 title-font md:justify-start ">
+        <svg width="330" height="80" viewBox="0 0 630 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M118.419 126.74H126.621L134.182 100.716H134.493L142.073 126.74H150.275L161.664 86.9359H152.471L145.882 114.651H145.532L138.283 86.9359H130.411L123.142 114.593H122.812L116.223 86.9359H107.03L118.419 126.74ZM169.658 86.9359H161.242V126.74H169.658V86.9359ZM206.776 100.871C205.669 91.6782 198.711 86.3917 189.498 86.3917C178.983 86.3917 170.956 93.8162 170.956 106.838C170.956 119.821 178.847 127.284 189.498 127.284C199.702 127.284 205.863 120.501 206.776 113.174L198.264 113.135C197.467 117.392 194.124 119.841 189.634 119.841C183.59 119.841 179.489 115.351 179.489 106.838C179.489 98.5585 183.531 93.8356 189.692 93.8356C194.299 93.8356 197.622 96.4983 198.264 100.871H206.776ZM207.885 126.74H216.301V115.429L220.441 110.375L231.344 126.74H241.412L226.466 104.758L241.237 86.9359H231.15L216.826 104.486H216.301V86.9359H207.885V126.74ZM240.694 126.74H267.593V119.802H249.11V110.298H266.135V103.359H249.11V93.8745H267.515V86.9359H240.694V126.74ZM283.391 126.74C295.518 126.74 302.865 119.238 302.865 106.799C302.865 94.3992 295.518 86.9359 283.507 86.9359H269.28V126.74H283.391ZM277.696 119.53V94.1466H283.06C290.523 94.1466 294.469 97.956 294.469 106.799C294.469 115.681 290.523 119.53 283.041 119.53H277.696ZM304.173 126.74H321.18C330.12 126.74 334.882 122.076 334.882 115.74C334.882 109.851 330.664 106.294 326.136 106.08V105.691C330.275 104.758 333.327 101.824 333.327 97.1397C333.327 91.1729 328.895 86.9359 320.111 86.9359H304.173V126.74ZM312.589 119.86V109.287H319.644C323.687 109.287 326.194 111.619 326.194 114.904C326.194 117.897 324.153 119.86 319.45 119.86H312.589ZM312.589 103.592V93.7384H318.983C322.715 93.7384 324.833 95.6626 324.833 98.539C324.833 101.688 322.268 103.592 318.828 103.592H312.589ZM335.432 126.74H360.912V119.802H343.848V86.9359H335.432V126.74ZM396.587 106.838C396.587 93.8162 388.502 86.3917 377.949 86.3917C367.337 86.3917 359.31 93.8162 359.31 106.838C359.31 119.802 367.337 127.284 377.949 127.284C388.502 127.284 396.587 119.86 396.587 106.838ZM388.055 106.838C388.055 115.273 384.051 119.841 377.949 119.841C371.826 119.841 367.842 115.273 367.842 106.838C367.842 98.403 371.826 93.8356 377.949 93.8356C384.051 93.8356 388.055 98.403 388.055 106.838ZM433.016 100.871C431.908 91.6782 424.95 86.3917 415.738 86.3917C405.223 86.3917 397.196 93.8162 397.196 106.838C397.196 119.821 405.087 127.284 415.738 127.284C425.941 127.284 432.102 120.501 433.016 113.174L424.503 113.135C423.706 117.392 420.363 119.841 415.874 119.841C409.829 119.841 405.728 115.351 405.728 106.838C405.728 98.5585 409.771 93.8356 415.932 93.8356C420.538 93.8356 423.862 96.4983 424.503 100.871H433.016ZM434.125 126.74H442.541V115.429L446.68 110.375L457.584 126.74H467.652L452.706 104.758L467.477 86.9359H457.39L443.065 104.486H442.541V86.9359H434.125V126.74ZM488.206 98.3836H496.272C496.155 91.2895 490.324 86.3917 481.462 86.3917C472.735 86.3917 466.341 91.2118 466.38 98.4419C466.36 104.311 470.5 107.674 477.225 109.287L481.559 110.375C485.893 111.425 488.303 112.669 488.323 115.351C488.303 118.266 485.543 120.249 481.267 120.249C476.894 120.249 473.746 118.227 473.474 114.243H465.33C465.544 122.853 471.705 127.304 481.365 127.304C491.082 127.304 496.797 122.659 496.816 115.37C496.797 108.743 491.802 105.225 484.882 103.67L481.306 102.815C477.847 102.018 474.951 100.735 475.009 97.8782C475.009 95.3127 477.283 93.4275 481.403 93.4275C485.427 93.4275 487.895 95.2544 488.206 98.3836Z" fill="black" />
+         <path d="M511.336 98.2805C516.464 98.2805 520.61 94.1346 520.592 89.0245C520.575 83.9145 516.464 79.7686 511.336 79.7686C506.244 79.7686 502.098 83.9145 502.08 89.0245C502.063 94.1346 506.244 98.2805 511.336 98.2805ZM511.336 95.3617C507.839 95.3617 504.982 92.513 504.999 89.0333C505.008 85.536 507.857 82.6873 511.336 82.6873C514.842 82.6873 517.665 85.5185 517.673 89.0333C517.691 92.5306 514.851 95.3617 511.336 95.3617ZM506.463 89.0245C506.463 91.7505 508.672 93.968 511.406 93.968C513.799 93.968 515.736 92.2501 516.008 89.9799H513.405C513.221 90.8564 512.414 91.47 511.406 91.47C510.057 91.47 508.952 90.3656 508.952 89.0158C508.952 87.6572 510.057 86.5791 511.406 86.5791C512.414 86.5791 513.3 87.1926 513.475 88.0691H516.078C515.806 85.799 513.799 84.081 511.406 84.081C508.672 84.081 506.463 86.2986 506.463 89.0245Z" fill="black" />
+         <rect x="4.06229" y="4.06229" width="621.568" height="203.821" rx="101.91" stroke="url(#paint0_linear)" stroke-width="8.12458" />
+         <defs>
+          <linearGradient id="paint0_linear" x1="-5.96013e-06" y1="45.4992" x2="212.636" y2="414.007" gradientUnits="userSpaceOnUse">
+           <stop offset="0.0001" stop-color="#63F7EE" />
+           <stop offset="0.786458" stop-color="#FCE952" />
+          </linearGradient>
+         </defs>
+        </svg>
+     
+       </a>
+       <nav class="flex flex-wrap justify-center py-6 text-base items-cente md:mr-auto md:ml-4 md:py-1 md:pl-4 ">
+        <a href="#price" class="mr-5 text-sm text-gray-600 hover:text-gray-800"> Prices</a>
+        <a href="#services" class="mr-5 text-sm text-gray-600 hover:text-gray-800"> Services</a>
+        <a href="#about" class="mr-5 text-sm text-gray-600 hover:text-gray-800"> About</a>
+       </nav>
+       <div class="flex flex-wrap justify-center ml-auto md:flex-no-wrap md:justify-end">
+        <button onclick="location.href='https://forms.office.com/r/gWxuvSbKwY'" class="inline-flex px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:ring focus:outline-none">
+         無料相談はこちら
+        </button>
+       </div>
+      </div>
+      <div class="bg-blueGray-900">
+       <div class="container flex flex-col flex-wrap px-5 py-6 mx-auto sm:flex-row">
+        <p class="text-sm text-center text-gray-400 sm:text-left ">© EXCEED.inc 2021
+        </p>
+        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+         <a class="text-white hover:text-blue-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+         </a>
+         <a class="ml-4 text-white hover:text-blue-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+           <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+           </path>
+          </svg>
+         </a>
+         <a class="ml-4 text-white hover:text-blue-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+           <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+         </a>
+        </span>
+       </div>
+      </div>
+     </footer>
   </div>
-  <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-  </script>
+</body>
+</html>
